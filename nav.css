@@ -1,0 +1,57 @@
+nav {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.brand, a.link {
+  color: #333;
+  text-decoration: none;
+}
+
+a.brand {
+  font-size: 2rem;
+  font-family: Heebo;
+  font-weight: 800;
+}
+
+.links {
+  display: flex;
+  column-gap: 3rem;
+}
+
+a.link {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.hamburger-menu span.material-symbols-outlined {
+  color: black;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  nav a.brand {
+    font-size: 24px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+  }
+}
+

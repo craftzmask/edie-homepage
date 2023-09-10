@@ -1,0 +1,72 @@
+footer {
+  margin-top: 12rem;
+  padding-top: 3rem;
+  background-color: #100E1D;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .form p.text {
+  color: #828282;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  margin-top: 120px;
+  padding-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  padding: 0 7rem;
+}
+
+.column {
+  width: 100%;
+}
+
+.column:first-child {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  line-height: 200%;
+}
+
+.column:nth-child(2) a {
+  color: white;
+}
+
+.column:last-child .text {
+  font-size: 0.875rem;
+}
+
+form:nth-child(2) button {
+  background-color: #2D9CDB;
+}
+
+.icons {
+  display: flex;
+  column-gap: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding: 0 5rem;
+  }
+
+  a.brand {
+    font-size: 36px;
+  }
+
+  .column:last-child .text {
+    font-size: 10px;
+  }
+}

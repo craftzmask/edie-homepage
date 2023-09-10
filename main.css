@@ -1,0 +1,392 @@
+main {
+  --mainBlue: #2D9CDB;
+  --defaultPadding: 14rem;
+  --disableColor: #828282;
+
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12rem;
+}
+
+.introduction, .signup {
+  padding-left: var(--defaultPadding);
+}
+
+.services, .showcases-container, .team-container, .blockquote {
+  padding: 0 calc(var(--defaultPadding) / 2);
+}
+
+/* introduction */
+.introduction-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+p.heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+p.text-special {
+  color: var(--mainBlue);
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.introduction p.heading {
+  max-width: 18ch;
+}
+
+
+/* signup form */
+.signup p.heading {
+  max-width: 14ch;
+}
+
+p.text {
+  color: #4F4F4F;
+  font-size: 1.125rem;
+  font-weight: 400;
+  max-width: 31ch;
+}
+
+.form p.text {
+  color: var(--disableColor);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  padding: 4px;
+  max-width: 32ch;
+}
+
+.form input[type="email"] {
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  padding-left: 10px;
+}
+
+.form input[type="email"]:focus-visible {
+  outline: none;
+}
+
+.form button {
+  color: white;
+  background-color: var(--mainBlue);
+  border: none;
+  padding: 0px 1.5rem;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+
+/* services */
+.services .heading {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 14ch;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  max-width: 340px;
+  padding: 2.5em 2rem;
+  border-radius: 12px;
+  height: 420px;
+}
+
+.card:hover, button:hover {
+  cursor: pointer;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-body {
+  color: #4F4F4F;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  color: white;
+  border-radius: 12px;
+}
+
+.material-symbols-outlined {
+  color: white;
+  font-size: 2rem;
+}
+
+.card button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 12px;
+  align-self: start;
+  font-size: 16px;
+}
+
+button:disabled {
+  color: var(--disableColor);;
+  background-color: #E0E0E0;
+}
+
+.card:first-child .card-img {
+  background-color: var(--mainBlue);
+}
+
+.card:nth-child(2) .card-img {
+  background-color: #27AE60;
+}
+
+.card:nth-child(2) {
+  box-shadow: 0px 10px 30px 0px rgba(51, 51, 51, 0.10);
+}
+
+.card:last-child .card-img {
+  background-color: #EB5757;
+}
+
+.card:nth-child(2) button {
+  color: white;
+  background-color: var(--mainBlue);
+}
+
+/* showcases */
+.showcases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10rem;
+  padding-top: 0;
+}
+
+.showcases-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 17ch;
+  padding-bottom: 0;
+}
+
+.showcase:nth-of-type(odd) {
+  position: relative;
+  top: 10rem;
+}
+
+figcaption {
+  color: var(--disableColor);
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.showcase p {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.see-more {
+  position: relative;
+  top: 10rem;
+  align-self: flex-end;
+  color: var(--mainBlue);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.see-more span {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--mainBlue);
+  vertical-align: middle;
+}
+
+.showcases-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* team */
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  max-width: 30%;
+}
+
+.team .header {
+  font-size: 18px;
+  color: #EB5757;
+  font-weight: 500;
+}
+
+.team .body {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.team .footer {
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.team-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.team-img img:first-child {
+  position: relative;
+  top: 25%;
+  grid-row: 1 / span 2;
+}
+
+
+/* blockquote */
+.quote {
+  font-size: 2.25rem;
+  font-weight: 500;
+  max-width: 38ch;
+  margin-bottom: 2.5rem;
+}
+
+.author {
+  display: flex;
+}
+
+.author img {
+  width: 80px;
+  margin-right: 1.8rem;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.job-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #828282;
+}
+
+@media screen and (max-width: 800px) {
+  .introduction, .signup {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .introduction-container, .services, .team-container, .showcases-container, .blockquote {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .showcases-heading {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 100%;
+  }
+
+  p.text-special, p.text, figcaption {
+    font-size: 12px;
+    max-width: 31ch;
+  }
+
+  form, .form {
+    max-width: 100%;
+  }
+
+  .form p.text {
+    font-size: 10px;
+  }
+
+  .form input[type="email"] {
+    height: 38px;
+  }
+
+  .form button {
+    padding: 0px 2rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .team-container {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 40px;
+  }
+
+  .team {
+    max-width: 80%;
+  }
+
+  .services p.heading, .showcases-heading {
+    font-size: 24px;
+  }
+
+  .showcases-heading {
+    margin-bottom: 50px;
+  }
+
+  .showcases {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .showcase:nth-of-type(odd) {
+    top: 0;
+  }
+
+  .showcase p, .see-more, span.material-symbols-outlined {
+    font-size: 18px;
+  }
+
+  .see-more {
+    top: 5rem;
+    align-self: flex-start;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+}

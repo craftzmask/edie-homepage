@@ -7,7 +7,6 @@ main {
   display: flex;
   flex-direction: column;
   row-gap: 12rem;
-  padding: 0 1rem;
 }
 
 .introduction, .signup {
@@ -266,12 +265,13 @@ figcaption {
 .team .footer {
   font-size: 16px;
   color: #4F4F4F;
+  max-width: 30ch;
 }
 
 .team-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .team-img img:first-child {
@@ -315,7 +315,7 @@ figcaption {
     padding-right: 3rem;
   }
 
-  .introduction-container, .services, .team-container, .showcases-container, .blockquote {
+  .services p.heading, .introduction-container, .services, .team-container, .showcases-container, .blockquote {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
@@ -326,6 +326,11 @@ figcaption {
     max-width: 100%;
   }
 
+  .services .heading {
+    max-width: 16ch;
+    margin-bottom: 7rem;
+  }
+  
   p.text-special, p.text, figcaption {
     font-size: 12px;
     max-width: 31ch;

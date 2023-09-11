@@ -1,6 +1,6 @@
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
+<h1 align="center">Edie homepage</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://edie-homepage-7aa92.web.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/craftzmask/edie-homepage">
       Solution
     </a>
     <span> | </span>
@@ -37,22 +37,39 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+#### Main Page
+![main-page](./public/main-page.png)
+![main-page2](./public/main-page2.png)
+![main-page3](./public/main-page3.png)
+![main-page4](./public/main-page4.png)
+![main-page5](./public/main-page5.png)
+
+#### Mobile Page
+![mobile-page](./public/mobile-page.png)
+![mobile-page2](./public/mobile-page2.png)
+![mobile-page3](./public/mobile-page3.png)
+![mobile-page4](./public/mobile-page4.png)
+![mobile-page5](./public/mobile-page5.png)
+
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
+  - You can see it [here](https://edie-homepage-7aa92.web.app/)
 - What was your experience?
+  - I didn't organize css well, so it is a mess since this page is very long and contains many elements.
 - What have you learned/improved?
+  - Learned how to organize css better and different width's value
 - Your wisdom? :)
+  - 
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- HTML
+- CSS
+- JavaScript
 
 ## Features
 
@@ -64,29 +81,21 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- Example: -->
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com) and a browser such as [Google Chrome](https://www.google.com/chrome/) installed on your computer. From your command line:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+$ git clone https://github.com/craftzmask/edie-homepage
 ```
 
 ## Acknowledgements
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [Responsive Navigation Bar Tutorial | HTML CSS JAVASCRIPT](https://www.youtube.com/watch?v=gXkqy0b4M5g&t=1164s&ab_channel=developedbyed)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [craftzmask](https://github.com/craftzmask/)
